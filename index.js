@@ -6,6 +6,14 @@ const quoteSources = {
     'Famous Quotes (Quotable API)': {
         'url': 'https://api.quotable.io/random',
         'process': data => `${data.content} &mdash; ${data.author}`,
+    },
+    'Progamming Quotes': {
+        'url': 'http://quotes.stormconsultancy.co.uk/random.json',
+        'process': data => `${data.quote} &mdash; ${data.author}`,
+    },
+    'Motivational Quotes': {
+        'url': 'https://motivational-quote-api.herokuapp.com/quotes/random',
+        'process': data => `${data.quote} &mdash; ${data.person}`,
     }
 };
 
