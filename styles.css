@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Inspiration&display=swap');
+
+@keyframes rainbow-color {
+    0%   { color: hsl(  0, 100%, 50%); }
+    14%  { color: hsl( 60, 100%, 50%); }
+    28%  { color: hsl(120, 100%, 50%); }
+    42%  { color: hsl(180, 100%, 50%); }
+    56%  { color: hsl(240, 100%, 50%); }
+    70%  { color: hsl(300, 100%, 50%); }
+    100% { color: hsl(360, 100%, 50%); }
+}
+
+@keyframes rainbow-button {
+    0%   { background-color: hsl(  0, 100%, 50%); box-shadow: 0 4px 0 hsl(  0, 100%, 30%); }
+    14%  { background-color: hsl( 60, 100%, 50%); box-shadow: 0 4px 0 hsl( 60, 100%, 30%); }
+    28%  { background-color: hsl(120, 100%, 50%); box-shadow: 0 4px 0 hsl(120, 100%, 30%); }
+    42%  { background-color: hsl(180, 100%, 50%); box-shadow: 0 4px 0 hsl(180, 100%, 30%); }
+    56%  { background-color: hsl(240, 100%, 50%); box-shadow: 0 4px 0 hsl(240, 100%, 30%); }
+    70%  { background-color: hsl(300, 100%, 50%); box-shadow: 0 4px 0 hsl(300, 100%, 30%); }
+    100% { background-color: hsl(360, 100%, 50%); box-shadow: 0 4px 0 hsl(360, 100%, 30%); }
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+}
+
+.centre {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centre button {
+    flex-shrink: 1;
+}
+
+.quote {
+    padding: 2rem;
+
+    text-align: center;
+    text-shadow: 0 0 3px black;
+    font-size: 48px;
+    font-family: 'Inspiration', cursive;
+
+    animation: rainbow-color 5s;
+    animation-iteration-count: infinite;
+}
+
+.stats {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+
+    color: white;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    text-shadow: 0 0 4px black;
+}
+
+.button-group {
+    vertical-align: text-bottom;
+}
+
+button {
+    position: relative;
+    padding: 1rem 3rem;
+    font-size: 24px;
+
+    background-color: hsl(22, 100%, 50%);
+    color: #fff;
+    animation: rainbow-button 5s;
+    animation-delay: -2.24s;
+    animation-iteration-count: infinite;
+
+    box-shadow: 0 4px 0 hsl(22, 100%, 30%);
+
+    border: none;
+    border-radius: 4px;
+}
+
+button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    top: 4px;
+    box-shadow: none !important;
+}
