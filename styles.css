@@ -111,3 +111,15 @@ button:active {
     top: 4px;
     box-shadow: none !important;
 }
+
+@media screen and (max-width: 800px) {
+    button {
+        padding: 0.6rem 2rem;
+    }
+    .quote {
+        font-size: 36px;
+    }
+    .stats {
+        font-size: 12px;
+    }
+}
