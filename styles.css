@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Fira+Sans:ital,wght@1,300&display=swap');
 
 @keyframes rainbow-color {
     0%   { color: hsl(  0, 100%, 50%); }
@@ -58,9 +58,9 @@ body {
     padding: 2rem;
 
     text-align: center;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 2px black;
     font-size: 48px;
-    font-family: 'Inspiration', cursive;
+    font-family: 'Fascinate', sans-serif;
 
     animation: rainbow-color 5s;
     animation-iteration-count: infinite;
