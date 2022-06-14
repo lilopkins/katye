@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Fira+Sans:ital,wght@1,300&display=swap');
 
-@keyframes rainbow-color {
+@keyframes rainbow-quote {
     0%   { color: hsl(  0, 100%, 50%); }
     14%  { color: hsl( 60, 100%, 50%); }
     28%  { color: hsl(120, 100%, 50%); }
@@ -8,6 +8,11 @@
     56%  { color: hsl(240, 100%, 50%); }
     70%  { color: hsl(300, 100%, 50%); }
     100% { color: hsl(360, 100%, 50%); }
+}
+
+@keyframes wobble {
+    from { transform: rotate(-4deg); }
+    to   { transform: rotate( 4deg); }
 }
 
 @keyframes rainbow-button {
@@ -62,7 +67,7 @@ body {
     font-size: 48px;
     font-family: 'Fascinate', sans-serif;
 
-    animation: rainbow-color 5s;
+    animation: rainbow-quote 5s linear, wobble 3s ease-in-out alternate-reverse;
     animation-iteration-count: infinite;
 }
 
