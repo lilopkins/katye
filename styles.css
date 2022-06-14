@@ -31,6 +31,7 @@
 
 body {
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .background {
@@ -70,6 +71,7 @@ body {
     text-shadow: 0 0 2px black;
     font-size: 48px;
     font-family: 'Fascinate', sans-serif;
+    text-overflow: ellipsis;
 
     animation: rainbow-quote 5s linear, wobble 3s ease-in-out alternate-reverse;
     animation-iteration-count: infinite;
