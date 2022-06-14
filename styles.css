@@ -89,7 +89,7 @@ button {
 
     background-color: hsl(22, 100%, 50%);
     color: #fff;
-    animation: rainbow-button 5s;
+    animation: rainbow-button 4s;
     animation-delay: -2.24s;
     animation-iteration-count: infinite;
 
