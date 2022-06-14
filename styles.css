@@ -25,6 +25,10 @@
     100% { background-color: hsl(360, 100%, 50%); box-shadow: 0 4px 0 hsl(360, 100%, 30%); }
 }
 
+::selection {
+    background-color: hsla(0, 100%, 50%, 0.3);
+}
+
 body {
     font-family: sans-serif;
 }
